@@ -10,6 +10,9 @@
 </head>
 <body>
     <div id="app">
+    	<nav>
+    		<a v-for="item in menu" :href="item.link">{{ item.text }}</a>
+    	</nav>
         <section>
             <h1>{{ heading1 }}</h1>
         </section>
