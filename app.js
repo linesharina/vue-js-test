@@ -1,6 +1,3 @@
 new Vue({
-	el: '#app',
-	data: {
-		heading1: 'Test 1'
-	}
+	el: '#app'
 });

@@ -7,7 +7,8 @@
     <title>Line Sharina</title>
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="menu-element.js" defer></script>
+    <script src="menu-element.js"></script>
+    <script src="frontpage-layout.js"></script>
     <script src="app.js" defer></script>
 </head>
 <body>
@@ -16,7 +17,14 @@
             <menu-elements />
         </div>
         <section>
-            <h1>{{ heading1 }}</h1>
+            <frontpage-layout>
+                <template v-slot:menu>
+                    <menu-elements :menu="[{text: 'link1',link: 'https://vg.no'},{text: 'link2',link: 'https://db.no'}]" />
+                </template>
+                <template v-slot:name>
+                    <h1>Line Sharina Aamodt Hagen</h1>
+                </template>
+            </frontpage-layout>
         </section>
     </div>
 </body>
