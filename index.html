@@ -13,19 +13,14 @@
 </head>
 <body>
     <div id="app">
-        <div>
-            <menu-elements />
-        </div>
-        <section>
-            <frontpage-layout>
-                <template v-slot:menu>
-                    <menu-elements :menu="[{text: 'link1',link: 'https://vg.no'},{text: 'link2',link: 'https://db.no'}]" />
-                </template>
-                <template v-slot:name>
-                    <h1>Line Sharina Aamodt Hagen</h1>
-                </template>
-            </frontpage-layout>
-        </section>
+        <frontpage-layout>
+            <template v-slot:menu>
+                <menu-elements :menu="[{text: 'link1',link: 'https://vg.no'},{text: 'link2',link: 'https://db.no'}]" />
+            </template>
+            <template v-slot:name>
+                <h1>Line Sharina Aamodt Hagen</h1>
+            </template>
+        </frontpage-layout>
     </div>
 </body>
 </html>
