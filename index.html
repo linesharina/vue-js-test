@@ -14,8 +14,12 @@
 <body>
     <div id="app">
         <frontpage-layout>
+            <template v-slot:bg-img>
+            	<img src="bg.jpg" alt="Tiss">
+            </template>
             <template v-slot:menu>
                 <menu-elements :menu="[{text: 'link1',link: 'https://vg.no'},{text: 'link2',link: 'https://db.no'}]" />
+            </template>
             </template>
             <template v-slot:name>
                 <h1>Line Sharina Aamodt Hagen</h1>
